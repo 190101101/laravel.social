@@ -1,0 +1,41 @@
+composer create-project --prefer-dist laravel/laravel laravel "6.*"
+;composer global rquire laravel/installer
+php artisan make:controller PageController
+php artisan
+php artisan make:controller Page2Controller --resource
+php artisan make:controller admin\SingleController
+php artisan make:rule Age
+php artisan migrate
+php artisan make:migration create_blogs_table
+php artisan migrate:rollback
+php artisan migrate:rollback --step=2
+php artisan migrate:refresh
+php artisan migrate:reset
+php artisan make:seeder BlogTableSeeder
+php artisan db:seed
+php artisan db:seed --class=BlogTableSeeder
+php artisan make:model Course
+php artisan make:model Course -m
+composer require laravel/ui "^1.0" --dev
+php artisan ui vue --auth
+npm install & npm run dev
+php artisan make:middleware CheckAge
+php artisan make:mail Send
+php artisan migrate:refresh --seed
+
+php artisan make:migration category --create=category
+php artisan make:seeder CategorySeeder
+composer require fzaninotto/faker
+php artisan db:seed --class=BlogSeeder
+php artisan migrate
+php artisan db:seed
+
+php artisan make:migration admin --create=admin
+php artisan make:controller ProvisionServer --invokable
+php artisan migrate:fresh --seed
+php artisan key:generate
+
+
+php artisan cache:clear
+php artisan view:clear
+php artisan config:cache
